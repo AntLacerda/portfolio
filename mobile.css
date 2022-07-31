@@ -1,0 +1,161 @@
+@media (max-width: 600px) {
+    header{
+        width: 100%;
+    }
+
+    .logo_cabecalho{
+        width: 100px;
+        height: 60px;
+        margin-right: 15px;
+        padding-bottom: 15px;
+    }
+
+    .links_cabecalho ul li{
+        font-size: 14px;
+    }
+
+    .container_cabecalho{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .container_git{
+        display: none;
+    }
+
+    .container_maior_dois img{
+        width: 300px;
+    }
+
+    .landing_page{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: #1f1f1f;
+    }
+
+    .maior_container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .container_menor_um h2{
+        font-size: 20px;
+    }
+
+    .container_maior_um{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .container_menor_um{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+    }
+
+    .container_menor_dois img{
+        width: 300px;
+    }
+
+    .botao_fale_comigo{
+        display: none;
+    }
+
+    .container_maior_tres{
+        display: none;
+    }
+
+    .sobre_mim_skills{
+        align-items: center;
+    }
+
+    .sobre_mim_skills hr{
+        align-items: center;
+        margin-left: 40px;
+    }
+
+    .sobre_mim_skills p{
+        margin-top: 20px;
+        font-size: 16px;
+    }
+
+    .container_maior_um_minhas_skills hr{
+        width: 170px;
+    }
+
+    .container_maior_dois_minhas_skills{
+        flex-wrap: wrap;
+    }
+
+    .container_maior_um_minhas_skills{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .container_maior_um_minhas_skills hr{
+        margin-left: 35px;
+    }
+
+    .caixa_linguagens{
+        margin-bottom: 20px;
+        margin-left: 90px;
+    }
+
+    .grade_portfolio{
+        flex-wrap: wrap;
+    }
+
+    .card{
+        width: 240px;
+    }
+
+    .container_servico{
+        width: 240px;
+        margin-left: 40px;
+    }
+
+    .container_dois_ex{
+        padding: 0px 610px 0px 0px;
+    }
+
+    .container_texto_ex{
+        margin-left: 152px;
+    }
+
+    .container_dois_fale_comigo{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .fale_comigo_formulario{
+        align-items: center;
+    }
+
+    .fale_comigo_formulario button{
+        margin-bottom: 40px;
+    }
+
+    .fale_comigo_imagem img{
+        width: 300px;
+    }
+
+    .rodape{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .texto_rodape p{
+        font-size: 8px;
+    }
+
+    .botao_rodape{
+        display: none;
+    }
+}
