@@ -2,6 +2,14 @@
 
 /* Cabeçalho _____________________________________________________*/
 
+html{
+    scroll-behavior: smooth;
+}
+
+:target{
+    scroll-margin-top: .8em;
+}
+
 header{
     background-color: #1f1f1f;
 }
