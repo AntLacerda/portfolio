@@ -155,4 +155,8 @@
     .botao_rodape{
         display: none;
     }
+    
+    .botao_fale_comigo_dois{
+        color: black;
+    }
 }
