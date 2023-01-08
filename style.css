@@ -247,6 +247,9 @@ header{
 .grade_portfolio{
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
 }
 
 .texto_portfolio{
@@ -367,6 +370,10 @@ header{
 .card .con-text p button:hover{
     background: #fff;
     color: #000;
+}
+
+.card .con-text h2{
+    margin-bottom: 5px;
 }
 
 /* Portifólio ____________________________________________________*/
@@ -544,11 +551,11 @@ header{
 }
 
 .container_dois_ex hr:first-child{
-    height: 380px;
+    height: 340px;
     width: 4px;
 }
 
-.container_dois_ex hr:last-child{
+.barra_menor{
     height: 50px;
     width: 4px;
 }
@@ -561,6 +568,7 @@ header{
     border-radius: 100px;
     border: 1px solid #ac62d3;
     margin-right: 20px;
+    margin-left: auto;
 }
 
 .texto_ex h2{
@@ -578,7 +586,8 @@ header{
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
-    margin-left: 460px;
+    
+    
 }
 
 /* Experiência ___________________________________________________*/
