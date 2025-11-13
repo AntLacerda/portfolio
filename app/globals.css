@@ -99,6 +99,7 @@
   /* Tipografia */
   --font-sans: var(--font-geist-sans), system-ui, -apple-system, sans-serif;
   --font-mono: var(--font-geist-mono), ui-monospace, monospace;
+  --font-unifraktur: var(--font-unifraktur-maguntia), serif;
   
   /* Raios */
   --radius-sm: var(--radius-sm);
