@@ -1,9 +1,10 @@
 import Image from "next/image";
+import TopMenu from "../components/top-menu";
 
 export default function Home() {
   return (
     <div className="">
-      <h1 className="text-black">Hello, Next.js!</h1>
+      <TopMenu />
     </div>
   );
 }
