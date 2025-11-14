@@ -11,6 +11,7 @@ module.exports = {
     extend: {
       fontFamily: {
         unifraktur: ['var(--font-unifraktur)', 'serif'],
+        sofia: ['var(--font-sofia-sans-extra-condensed)', 'serif'],
         sans: ['var(--font-sans)', 'system-ui', '-apple-system', 'sans-serif'],
         mono: ['var(--font-mono)', 'ui-monospace', 'monospace'],
       },

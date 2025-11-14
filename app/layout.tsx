@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono, UnifrakturCook } from "next/font/google";
+import { Geist, Geist_Mono, UnifrakturCook, Anton } from "next/font/google";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -12,11 +12,18 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
-// Correção feita anteriormente
+
 const unifrakturMaguntia = UnifrakturCook({
   variable: "--font-unifraktur-maguntia",
   subsets: ["latin"],
   weight: "700", 
+});
+
+
+const sofiaSansExtraCondensed = Anton({
+  variable: "--font-sofia-sans-extra-condensed",
+  subsets: ["latin"],
+  weight: "400",
 });
 
 export const metadata: Metadata = {
