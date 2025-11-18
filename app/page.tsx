@@ -1,5 +1,6 @@
 import Image from "next/image";
 import TopMenu from "../components/top-menu";
+import LogoLoopSection from "../components/LogoLoopSection";
 
 export default function Home() {
   return (
@@ -48,6 +49,7 @@ export default function Home() {
           </div>
         </section>
       </main>
+      <LogoLoopSection />
     </div>
   );
 }
