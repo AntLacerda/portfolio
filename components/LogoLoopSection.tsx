@@ -1,5 +1,5 @@
 import LogoLoop from './LogoLoop';
-import { SiReact, SiNextdotjs, SiTypescript, SiTailwindcss, SiNodedotjs } from 'react-icons/si';
+import { SiReact, SiNextdotjs, SiTypescript, SiTailwindcss, SiNodedotjs, SiGithub } from 'react-icons/si';
 import { DiAndroid, DiJava } from 'react-icons/di';
 
 const techLogos = [
@@ -10,6 +10,7 @@ const techLogos = [
   { node: <SiNodedotjs />, title: "Node.js", href: "https://nodejs.org" },
   { node: <DiAndroid />, title: "Android", href: "https://developer.android.com" },
     { node: <DiJava />, title: "Java", href: "https://www.java.com" },
+    { node: <SiGithub />, title: "GitHub", href: "https://github.com" },
 ];
 
 export default function LogoLoopSection() {
