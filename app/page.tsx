@@ -28,16 +28,16 @@ export default function Home() {
               <p className="font-unifraktur text-5xl text-[#FFF6D9] leading-[0.8]">
                 creative
               </p>
-              <p className="font-sofia text-9xl font-extrabold  text-[#FFF6D9] leading-[0.8] -mt-8">
+              <p className="font-sofia text-9xl font-extrabold  text-[#FFF6D9] leading-[0.8] ">
                 FULL STACK
               </p>
-              <p className="font-sofia text-9xl font-extrabold  text-[#FFF6D9] leading-[0.8] -mt-10">
+              <p className="font-sofia text-9xl font-extrabold  text-[#FFF6D9] leading-[0.8]">
                 DEVELOPER
               </p>
             </div>
           </div>
 
-          <div className="absolute bottom-4 right-2 z-20 p-8 md:p-16">
+          <div className="absolute bottom-4 right-2 z-20">
             <div className="flex flex-col justify-center items-end">
               <p className="font-unifraktur text-3xl text-[#FFF6D9] leading-[0.8]">
                 Sonhar é parte importante da jornada.
@@ -50,6 +50,27 @@ export default function Home() {
         </section>
       </main>
       <LogoLoopSection />
+      <section className="flex w-full h-screen bg-black">
+        <div className="flex flex-col w-1/3">
+          <div className="bg-[url(/images/profile.png)] w-full h-3/4 text-[#FFF6D9] p-3 flex flex-col justify-end bg-cover bg-center border-8 border-black rounded-br-[100px]">
+            <span className="font-unifraktur">
+              26 anos
+            </span>
+            <span className="font-sofia font-black text-4xl leading-[0.8]">
+              ANTONIO LACERDA
+            </span>
+          </div>
+          <div className="bg-[#FFF6D9] h-3/5 w-full">
+            <span>
+              teste
+            </span>
+          </div>
+        </div>
+        <div>
+
+        </div>
+
+      </section>
     </div>
   );
 }
