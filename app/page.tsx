@@ -2,8 +2,12 @@ import Image from "next/image";
 import TopMenu from "../components/top-menu";
 import LogoLoopSection from "../components/LogoLoopSection";
 import Skill from "../components/skill";
+import Contacts from "../components/Contacts";
 import { SiReact, SiNextdotjs, SiTypescript, SiNodedotjs, SiGithub } from 'react-icons/si';
 import { DiJava } from 'react-icons/di';
+import { MdPhone, MdMail } from 'react-icons/md';
+import { FaLinkedin } from 'react-icons/fa';
+import { HiArrowTurnDownLeft } from 'react-icons/hi2';
 
 export default function Home() {
   return (
@@ -152,8 +156,34 @@ export default function Home() {
            </div>
 
           </div>
-          <div className="p-8 border-8 border-black h-1/3 bg-[#FFF6D9]">
-
+          <div className="p-4 border-8 border-black h-1/3 bg-[#FFF6D9] flex rounded-tr-[100px]">
+            <div className="w-1/2">
+              <span className="font-unifraktur text-5xl">Contato</span>
+              <div className="">
+                <Contacts icon={<MdPhone />} content="(83) 9.9408-3305" />
+                <Contacts icon={<MdMail />} content="lacerdatech99@gmail.com" />
+                <Contacts icon={<SiGithub />} content="github.com/antonio-lacerda" />
+                <Contacts icon={<FaLinkedin />} content="linkedin.com/antoniolac" />              
+              </div>
+            </div>
+            <div className="w-1/2">
+              <span className="font-unifraktur text-5xl">Currículo</span>
+              <div className="flex gap-4">
+                <Image
+                  src="/images/qrcode.png"
+                  alt="Currículo"
+                  width={150}
+                  height={150}
+                  className=""
+                />
+                <div >
+                  <span className="font-black">Acesse o meu currículo</span>
+                  <div className="font-bold text-3xl">
+                    <HiArrowTurnDownLeft/>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
 
