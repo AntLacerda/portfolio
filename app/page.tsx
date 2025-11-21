@@ -1,6 +1,9 @@
 import Image from "next/image";
 import TopMenu from "../components/top-menu";
 import LogoLoopSection from "../components/LogoLoopSection";
+import Skill from "../components/skill";
+import { SiReact, SiNextdotjs, SiTypescript, SiNodedotjs, SiGithub } from 'react-icons/si';
+import { DiJava } from 'react-icons/di';
 
 export default function Home() {
   return (
@@ -124,8 +127,28 @@ export default function Home() {
                 
               </div>
            </div>
-           <div className="p-8 border-8 border-black w-1/2 bg-[#FFF6D9]">
-              <span>softwares skills</span>
+           <div className="p-4 border-8 border-black w-1/2 bg-[#FFF6D9] rounded-bl-[100px]">
+              <span className="font-unifraktur text-5xl">Software Skills</span>
+              <div className="flex justify-around">
+                <div>
+                  <Skill skill={<SiReact/>} level={4} title="React" style="bg-[#2D8FF8]"/>
+                  <Skill skill={<SiTypescript/>} level={3} title="Typescript" style="bg-[#2D3EF8]"/>
+                  <Skill skill={<SiNextdotjs/>} level={4} title="Next.js" style="bg-[#343434]"/>
+                </div>
+                <div>
+                  <Skill skill={<DiJava/>} level={3} title="Java" style="bg-[#F87E2D]"/>
+                  <Skill skill={<SiNodedotjs/>} level={4} title="Node.js" style="bg-[#00AF1D]"/>
+                  <Skill skill={<SiGithub/>} level={4} title="Github" style="bg-[#000000]"/>
+                </div>
+              </div>
+              <span className="font-unifraktur text-5xl">Personal Skills</span>
+              <div className="flex gap-2 justify-center mt-4">
+                <p><strong>Criativo</strong></p>
+                <p><strong>Sociável</strong></p>
+                <p><strong>Comunicativo</strong></p>
+                <p><strong>Ágil</strong></p>
+                <p><strong>Adpatável</strong></p>
+              </div>
            </div>
 
           </div>
