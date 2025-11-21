@@ -72,9 +72,66 @@ export default function Home() {
             <strong className="font-sofia">Vamos construir o futuro juntos.</strong>
           </div>
         </div>
-        <div>
-          
+        <div className="flex flex-col w-2/3 h-full">
+          <div className="flex flex-row w-full h-2/3">
+           <div className="p-4 border-8 border-black w-1/2 rounded-tr-[100px] bg-[#FFF6D9]">
+              <span className="font-unifraktur text-5xl">Educação</span>
+              <div className="mt-2">
+                <span className="font-unifraktur font-bold text-ms">
+                  2021
+                </span>
+                <p className="font-sofia text-black font-bold">
+                  Bacharelado em Ciências Jurídicas e Sociais
+                </p>
+                <p className="font-sofia text-black text-sm">
+                  Faculdade Católica da Paraíba
+                </p>
+              </div>
+              <div className="mt-2">
+                <span className="font-unifraktur font-bold text-ms">
+                  2025
+                </span>
+                <p className="font-sofia text-black font-bold">
+                  Análise e Desenvolvimento de Sistemas
+                </p>
+                <p className="font-sofia text-black text-sm">
+                  Instituto Federal da Paraíba
+                </p>
+                
+              </div>
+              <span className="font-unifraktur text-5xl">Experiências</span>
+              <div className="mt-2">
+                <span className="font-unifraktur font-bold text-ms">
+                  2024
+                </span>
+                <p className="font-sofia text-black font-bold">
+                  Loopis Jr. Soluções Tecnológicas
+                </p>
+                <p className="font-sofia text-black text-sm">
+                  Diretor Presidente
+                </p>
+              </div>
+              <div className="mt-2">
+                <span className="font-unifraktur font-bold text-ms">
+                  2025
+                </span>
+                <p className="font-sofia text-black font-bold">
+                  Instituto Federal da Paraíba
+                </p>
+                <p className="font-sofia text-black text-sm">
+                  Monitor de Programação para Dispositivos Móveis
+                </p>
+                
+              </div>
+           </div>
+           <div className="p-8 border-8 border-black w-1/2 bg-[#FFF6D9]">
+              <span>softwares skills</span>
+           </div>
 
+          </div>
+          <div className="p-8 border-8 border-black h-1/3 bg-[#FFF6D9]">
+
+          </div>
         </div>
 
       </section>
