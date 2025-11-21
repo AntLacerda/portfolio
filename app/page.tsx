@@ -60,13 +60,20 @@ export default function Home() {
               ANTONIO LACERDA
             </span>
           </div>
-          <div className="bg-[#FFF6D9] h-3/5 w-full">
-            <span>
-              teste
+          <div className="flex flex-col bg-[#FFF6D9] h-3/5 w-full p-4 border-8 border-black rounded-bl-[100px]">
+            <span className="font-unifraktur text-5xl mb-2">
+              About me
             </span>
+            <p className="font-sofia text-black mt-2 text-sm">
+              Olá, <br />
+              Eu me chamo Antonio Lacerda, sou desenvolvedor Full-Stack, especialista em desenvolvimento web e Mobile. Criar sistemas do zero até à entrega e me desafiar solucionando problemas é o que me motiva a continuar construindo softwares com qualidade, segurança e elegância.
+              <br/><br/>              
+            </p>
+            <strong className="font-sofia">Vamos construir o futuro juntos.</strong>
           </div>
         </div>
         <div>
+          
 
         </div>
 
