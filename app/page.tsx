@@ -9,6 +9,8 @@ import { MdPhone, MdMail } from 'react-icons/md';
 import { FaLinkedin } from 'react-icons/fa';
 import { HiArrowTurnDownLeft } from 'react-icons/hi2';
 
+import BestWorksCard from "../components/BestWorksCard";
+
 export default function Home() {
   return (
     <div className="min-h-screen">
@@ -189,9 +191,29 @@ export default function Home() {
 
       </section>
       <section className="flex flex-col bg-black">
-        <div className="text-[#FFF6D9] p-4 flex flex-col items-center justify-center">
+        <div className="text-[#FFF6D9] p-4 flex flex-col items-center justify-center mb-2">
           <h3 className="font-unifraktur text-2xl -mb-3">Melhores</h3>
           <h3 className="font-sofia font-extrabold text-5xl">TRABALHOS</h3>
+        </div>
+        <div className="w-full flex flex-col">
+          <BestWorksCard
+            backgroundImage="/images/bp01.png"
+            title="JURIS TANTUM"
+            description="Sistema de gestão e produção documental voltado para escritórios de advocacia e juristas em geral. O projeto foi desenvolvido utilizando as linguagens TypeScript, Next.js, Tailwind CSS e Node.js."
+            specialty="Projeto Web - 2025"
+            imageUrl="/images/rp01.png"
+            direction="right"
+            widthImage={700}
+          />
+          <BestWorksCard
+            backgroundImage="/images/bp02.png"
+            title="N-REPORT"
+            description="Sistema de registro de crimes e ocorridos voltado para auxiliar os gestores na tomada de decisão. O projeto foi desenvolvido utilizando React Native, TypeScript, Styled Components e Node.js."
+            specialty="Projeto Mobile - 2024"
+            imageUrl="/images/rp02.png"
+            direction="left"
+            widthImage={500}
+          />
         </div>
 
 
