@@ -168,11 +168,11 @@ export default function Home() {
             </div>
             <div className="w-1/2">
               <span className="font-unifraktur text-5xl">Currículo</span>
-              <div className="flex gap-4">
+              <div className="flex gap-4 mt-3">
                 <Image
                   src="/images/qrcode.png"
                   alt="Currículo"
-                  width={150}
+                  width={100}
                   height={150}
                   className=""
                 />
@@ -186,6 +186,14 @@ export default function Home() {
             </div>
           </div>
         </div>
+
+      </section>
+      <section className="flex flex-col bg-black">
+        <div className="text-[#FFF6D9] p-4 flex flex-col items-center justify-center">
+          <h3 className="font-unifraktur text-2xl -mb-3">Melhores</h3>
+          <h3 className="font-sofia font-extrabold text-5xl">TRABALHOS</h3>
+        </div>
+
 
       </section>
     </div>
