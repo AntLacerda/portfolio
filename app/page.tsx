@@ -1,3 +1,5 @@
+"use client";
+
 import Image from "next/image";
 import TopMenu from "../components/top-menu";
 import LogoLoopSection from "../components/LogoLoopSection";
@@ -8,10 +10,13 @@ import { DiJava } from 'react-icons/di';
 import { MdPhone, MdMail } from 'react-icons/md';
 import { FaLinkedin } from 'react-icons/fa';
 import { HiArrowTurnDownLeft } from 'react-icons/hi2';
-
+import { useState } from "react";
 import BestWorksCard from "../components/BestWorksCard";
+import ServicesCard from "@/components/ServicesCard";
 
 export default function Home() {
+  const [hoveredCard, setHoveredCard] = useState<number | null>(null);
+
   return (
     <div className="min-h-screen">
       <div className="fixed top-0 left-0 w-full z-30">
@@ -221,8 +226,47 @@ export default function Home() {
           <h3 className="font-unifraktur text-2xl -mb-3">Meus</h3>
           <h3 className="font-sofia font-extrabold text-5xl">SERVIÇOS</h3>
         </div>
-        <div className="w-full flex">
-          
+        <div className="flex gap-4 w-full max-w-7xl h-[500px]">
+          <ServicesCard 
+            id={1} 
+            bgColor="bg-blue-600" 
+            title="Desemvolvimento Web" 
+            description="Transforme sua ideia em um sistema web poderoso. Desenvolvemos sistemas web completos e personalizados para atender às necessidades da sua empresa. Nossa equipe une tecnologia, design e estratégia para criar aplicativos eficientes, escaláveis e fáceis de usar." 
+            image="/images/devweb.png"
+            hoveredCard={hoveredCard}
+            onMouseEnter={setHoveredCard}
+            onMouseLeave={() => setHoveredCard(null)}  
+          />
+          <ServicesCard 
+            id={2} 
+            bgColor="bg-red-600" 
+            title="Criação de Sites" 
+            description="Transforme sua ideia em um sistema web poderoso. Desenvolvemos sistemas web completos e personalizados para atender às necessidades da sua empresa. Nossa equipe une tecnologia, design e estratégia para criar aplicativos eficientes, escaláveis e fáceis de usar." 
+            image="/images/devweb.png"
+            hoveredCard={hoveredCard}
+            onMouseEnter={setHoveredCard}
+            onMouseLeave={() => setHoveredCard(null)}
+          />
+          <ServicesCard 
+            id={3} 
+            bgColor="bg-green-600" 
+            title="Desemvolvimento Mobile" 
+            description="Transforme sua ideia em um sistema web poderoso. Desenvolvemos sistemas web completos e personalizados para atender às necessidades da sua empresa. Nossa equipe une tecnologia, design e estratégia para criar aplicativos eficientes, escaláveis e fáceis de usar." 
+            image="/images/devweb.png"
+            hoveredCard={hoveredCard}
+            onMouseEnter={setHoveredCard}
+            onMouseLeave={() => setHoveredCard(null)}  
+          />
+          <ServicesCard 
+            id={4} 
+            bgColor="bg-pink-600" 
+            title="Design Gráfico" 
+            description="Transforme sua ideia em um sistema web poderoso. Desenvolvemos sistemas web completos e personalizados para atender às necessidades da sua empresa. Nossa equipe une tecnologia, design e estratégia para criar aplicativos eficientes, escaláveis e fáceis de usar." 
+            image="/images/devweb.png"
+            hoveredCard={hoveredCard}
+            onMouseEnter={setHoveredCard}
+            onMouseLeave={() => setHoveredCard(null)}  
+          />
         </div>
       </section>
     </div>
