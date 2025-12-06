@@ -215,8 +215,15 @@ export default function Home() {
             widthImage={500}
           />
         </div>
-
-
+      </section>
+      <section className="flex flex-col bg-black">
+        <div className="text-[#FFF6D9] p-4 flex flex-col items-center justify-center mb-2">
+          <h3 className="font-unifraktur text-2xl -mb-3">Meus</h3>
+          <h3 className="font-sofia font-extrabold text-5xl">SERVIÇOS</h3>
+        </div>
+        <div className="w-full flex">
+          
+        </div>
       </section>
     </div>
   );
