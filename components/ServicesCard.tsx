@@ -39,22 +39,23 @@ export default function ServicesCard({
                 cursor-pointer
                 overflow-hidden
                 relative
-                ${isHovered ? 'flex-3' : isOtherHovered ? 'flex-[0.5]' : 'flex-1'}    
+                ${isHovered ? 'flex-2' : isOtherHovered ? 'flex-[0.5]' : 'flex-1'}    
             `} 
         >
-            <div className={`h-full w-full p-8 flex ${isOtherHovered ? 'flex-row' : 'flex-col'} justify-between relative`}>
+            <div className={`h-full w-full flex flex-col justify-between relative`}>
                 {/* Título */}
                 <div className={`
-                    transition-all duration-500
                     ${isOtherHovered ? 'writing-mode-vertical' : ''}
                 `}>
                     <h3 className={`
                         text-white font-bold
-                        transition-all duration-500
+                        font-sofia
+                        pt-8 px-8
                         ${isOtherHovered 
-                            ? 'text-2xl [writing-mode:vertical-rl] rotate-180 mx-auto text-center' 
-                            : 'text-2xl'
+                            ? 'text-lg [writing-mode:vertical-rl] rotate-180 mx-auto text-center' 
+                            : isHovered ? 'text-3xl' : 'text-lg'
                         }
+                        
                     `}>
                         {title}
                     </h3>
@@ -73,7 +74,7 @@ export default function ServicesCard({
                     <Image 
                         src={image} 
                         alt={title} 
-                        width={isHovered ? 250 : 200} 
+                        width={isHovered ? 250 : 400} 
                         height={isHovered ? 250 : 200}
                         className={`
                             transition-all duration-500

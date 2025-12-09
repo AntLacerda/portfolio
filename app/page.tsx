@@ -226,7 +226,7 @@ export default function Home() {
           <h3 className="font-unifraktur text-2xl -mb-3">Meus</h3>
           <h3 className="font-sofia font-extrabold text-5xl">SERVIÇOS</h3>
         </div>
-        <div className="flex gap-4 w-full max-w-7xl h-[500px]">
+        <div className="flex gap-4 w-full h-[500px] px-6 mb-6">
           <ServicesCard 
             id={1} 
             bgColor="bg-blue-600" 
@@ -242,7 +242,7 @@ export default function Home() {
             bgColor="bg-red-600" 
             title="Criação de Sites" 
             description="Transforme sua ideia em um sistema web poderoso. Desenvolvemos sistemas web completos e personalizados para atender às necessidades da sua empresa. Nossa equipe une tecnologia, design e estratégia para criar aplicativos eficientes, escaláveis e fáceis de usar." 
-            image="/images/devweb.png"
+            image="/images/sites.png"
             hoveredCard={hoveredCard}
             onMouseEnter={setHoveredCard}
             onMouseLeave={() => setHoveredCard(null)}
@@ -252,7 +252,7 @@ export default function Home() {
             bgColor="bg-green-600" 
             title="Desemvolvimento Mobile" 
             description="Transforme sua ideia em um sistema web poderoso. Desenvolvemos sistemas web completos e personalizados para atender às necessidades da sua empresa. Nossa equipe une tecnologia, design e estratégia para criar aplicativos eficientes, escaláveis e fáceis de usar." 
-            image="/images/devweb.png"
+            image="/images/desmob.png"
             hoveredCard={hoveredCard}
             onMouseEnter={setHoveredCard}
             onMouseLeave={() => setHoveredCard(null)}  
@@ -262,7 +262,7 @@ export default function Home() {
             bgColor="bg-pink-600" 
             title="Design Gráfico" 
             description="Transforme sua ideia em um sistema web poderoso. Desenvolvemos sistemas web completos e personalizados para atender às necessidades da sua empresa. Nossa equipe une tecnologia, design e estratégia para criar aplicativos eficientes, escaláveis e fáceis de usar." 
-            image="/images/devweb.png"
+            image="/images/desgraphic.png"
             hoveredCard={hoveredCard}
             onMouseEnter={setHoveredCard}
             onMouseLeave={() => setHoveredCard(null)}  
