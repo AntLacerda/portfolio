@@ -1,3 +1,5 @@
+"use client";
+
 import Image from "next/image";
 import TopMenu from "../components/top-menu";
 import LogoLoopSection from "../components/LogoLoopSection";
@@ -8,10 +10,13 @@ import { DiJava } from 'react-icons/di';
 import { MdPhone, MdMail } from 'react-icons/md';
 import { FaLinkedin } from 'react-icons/fa';
 import { HiArrowTurnDownLeft } from 'react-icons/hi2';
-
+import { useState } from "react";
 import BestWorksCard from "../components/BestWorksCard";
+import ServicesCard from "@/components/ServicesCard";
 
 export default function Home() {
+  const [hoveredCard, setHoveredCard] = useState<number | null>(null);
+
   return (
     <div className="min-h-screen">
       <div className="fixed top-0 left-0 w-full z-30">
@@ -221,8 +226,51 @@ export default function Home() {
           <h3 className="font-unifraktur text-2xl -mb-3">Meus</h3>
           <h3 className="font-sofia font-extrabold text-5xl">SERVIÇOS</h3>
         </div>
-        <div className="w-full flex">
-          
+        <div className="flex gap-4 w-full h-[500px] px-6 mb-6">
+          <ServicesCard 
+            id={1} 
+            bgColor="bg-gradient-to-b from-[#0D1E44] to-[#214CAA]" 
+            title="Desemvolvimento Web" 
+            subtitle="Transforme sua ideia em um sistema web poderoso"
+            description="Desenvolvemos sistemas web completos e personalizados para atender às necessidades da sua empresa. Nossa equipe une tecnologia, design e estratégia para criar aplicativos eficientes, escaláveis e fáceis de usar. Desde o planejamento até a entrega, cuidamos de cada detalhe para que sua solução seja moderna, segura e preparada para crescer junto com você." 
+            image="/images/devweb.png"
+            hoveredCard={hoveredCard}
+            onMouseEnter={setHoveredCard}
+            onMouseLeave={() => setHoveredCard(null)}  
+          />
+          <ServicesCard 
+            id={2} 
+            bgColor="bg-gradient-to-b from-[#239399] via-[#32cbd7] to-[#3AF5FF]" 
+            title="Criação de Sites" 
+            subtitle="Divulgue sua marca com um site profissional"
+            description="Transmita confiança desde o primeiro clique. Criamos sites modernos, rápidos e totalmente responsivos, pensados para destacar sua marca e transformar visitantes em clientes. Do visual à experiência do usuário, cada detalhe é planejado para elevar sua presença digital e gerar resultados reais." 
+            image="/images/sites.png"
+            hoveredCard={hoveredCard}
+            onMouseEnter={setHoveredCard}
+            onMouseLeave={() => setHoveredCard(null)}
+          />
+          <ServicesCard 
+            id={3} 
+            bgColor="bg-[#A2A6F7]" 
+            title="Desemvolvimento Mobile" 
+            subtitle="Leve seu negócio para onde seus clientes estão"
+            description="Conecte-se com seu público de forma simples e prática. Desenvolvemos aplicativos mobile intuitivos, seguros e eficientes para impulsionar seu negócio e aproximar você dos seus clientes. Funcionalidade, desempenho e experiência fluida para acompanhar o ritmo do mercado atual." 
+            image="/images/desmobi.png"
+            hoveredCard={hoveredCard}
+            onMouseEnter={setHoveredCard}
+            onMouseLeave={() => setHoveredCard(null)}  
+          />
+          <ServicesCard 
+            id={4} 
+            bgColor="bg-[#ED3E7E]" 
+            title="Design Gráfico"
+            subtitle="Dê vida à sua marca com designs impactantes" 
+            description="Mostre ao mundo a força da sua identidade visual. Criamos artes profissionais e memoráveis, pensadas para fortalecer sua marca e transmitir sua mensagem com clareza e estilo. De logotipos a materiais promocionais, produzimos designs que impressionam e geram conexão imediata." 
+            image="/images/desgraphic.png"
+            hoveredCard={hoveredCard}
+            onMouseEnter={setHoveredCard}
+            onMouseLeave={() => setHoveredCard(null)}  
+          />
         </div>
       </section>
     </div>
