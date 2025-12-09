@@ -273,6 +273,15 @@ export default function Home() {
           />
         </div>
       </section>
+      <footer className="bg-black">
+        <div className="bg-[#FFF6D9] flex justify-around items-center p-4 py-8 rounded-tr-full">
+          <div className="flex flex-col">
+            <span className="font-uni text-black font-extrabold text-4xl">MUITO OBRIGADO!</span>
+            <p className="">Desenvolvendo com criatividade e visão. Entre em contato e continue conectado.</p>
+          </div>
+          <p>&copy; All rights reserved - Antonio Lacerda 2025</p>
+        </div>
+      </footer>
     </div>
   );
 }
