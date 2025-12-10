@@ -219,6 +219,15 @@ export default function Home() {
             direction="left"
             widthImage={500}
           />
+          <BestWorksCard
+            backgroundImage="/images/bp03.png"
+            title="CAIXUP - AÇAÍ DO MANO"
+            description="Sistema de controle de caixa e gestão para açaíteria. O projeto foi desenvolvido utilizando as linguagens TypeScript, Next.js, Tailwind CSS e Node.js."
+            specialty="Projeto Web - 2025"
+            imageUrl="/images/rp03.png"
+            direction="right"
+            widthImage={700}
+          />
         </div>
       </section>
       <section className="flex flex-col bg-black">
