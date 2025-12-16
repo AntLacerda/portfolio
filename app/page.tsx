@@ -24,7 +24,7 @@ export default function Home() {
       </div>
       
       <main className="relative w-full h-screen overflow-hidden">
-        <section className="relative w-full h-full">
+        <section id="" className="relative w-full h-full">
           {/* Background Image */}
           <Image
             src="/images/backgound.png"
@@ -64,7 +64,7 @@ export default function Home() {
         </section>
       </main>
       <LogoLoopSection />
-      <section className="flex w-full h-screen bg-black">
+      <section id="about" className="flex w-full h-screen bg-black">
         <div className="flex flex-col w-1/3">
           <div className="bg-[url(/images/profile.png)] w-full h-3/4 text-[#FFF6D9] p-3 flex flex-col justify-end bg-cover bg-center border-8 border-black rounded-br-[100px]">
             <span className="font-unifraktur">
@@ -195,7 +195,7 @@ export default function Home() {
         </div>
 
       </section>
-      <section className="flex flex-col bg-black">
+      <section id="projects" className="flex flex-col bg-black">
         <div className="text-[#FFF6D9] p-4 flex flex-col items-center justify-center mb-2">
           <h3 className="font-unifraktur text-2xl -mb-3">Melhores</h3>
           <h3 className="font-sofia font-extrabold text-5xl">TRABALHOS</h3>
@@ -230,7 +230,7 @@ export default function Home() {
           />
         </div>
       </section>
-      <section className="flex flex-col bg-black">
+      <section id="services" className="flex flex-col bg-black">
         <div className="text-[#FFF6D9] p-4 flex flex-col items-center justify-center mb-2">
           <h3 className="font-unifraktur text-2xl -mb-3">Meus</h3>
           <h3 className="font-sofia font-extrabold text-5xl">SERVIÇOS</h3>

@@ -5,7 +5,7 @@ export default function TopMenu() {
             <nav className="space-x-4 flex gap-6 text-[#FFF6D9]">
                 <a href="#about" className="transition ease-in duration-200 hover:text-gray-100">About</a>
                 <a href="#projects" className="transition ease-in duration-200 hover:text-gray-100">Projects</a>
-                <a href="#contact" className="transition ease-in duration-200 hover:text-gray-100">Contact</a>
+                <a href="#services" className="transition ease-in duration-200 hover:text-gray-100">Services</a>
             </nav>
             <span className="">2025</span>
         </header>
