@@ -209,6 +209,7 @@ export default function Home() {
             imageUrl="/images/rp01.png"
             direction="right"
             widthImage={700}
+            externalLink={"https://www.linkedin.com/feed/update/urn:li:activity:7374239622731747328/?originalSubdomain=pt"}
           />
           <BestWorksCard
             backgroundImage="/images/bp02.png"
@@ -218,6 +219,7 @@ export default function Home() {
             imageUrl="/images/rp02.png"
             direction="left"
             widthImage={500}
+            externalLink={"https://www.linkedin.com/feed/update/urn:li:activity:7300232062400172032/"}
           />
           <BestWorksCard
             backgroundImage="/images/bp03.png"
