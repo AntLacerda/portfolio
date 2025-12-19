@@ -86,7 +86,7 @@ export default function Home() {
               ANTONIO LACERDA
             </span>
           </div>
-          <div className="flex flex-col bg-[#FFF6D9] h-3/5 w-full p-4 border-8 border-black rounded-bl-[100px]">
+          <div className="flex flex-col bg-[#FFF6D9] h-2/4 w-full p-4 border-8 border-black rounded-bl-[100px]">
             <span className="font-unifraktur text-5xl mb-2">
               About me
             </span>
