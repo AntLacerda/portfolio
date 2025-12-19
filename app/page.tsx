@@ -1,18 +1,23 @@
 "use client";
 
+// React & Next.js
+import { useState } from "react";
 import Image from "next/image";
+
+// Components
 import TopMenu from "../components/top-menu";
 import LogoLoopSection from "../components/LogoLoopSection";
 import Skill from "../components/skill";
 import Contacts from "../components/Contacts";
+import BestWorksCard from "../components/BestWorksCard";
+import ServicesCard from "@/components/ServicesCard";
+
+// Icons
 import { SiReact, SiNextdotjs, SiTypescript, SiNodedotjs, SiGithub } from 'react-icons/si';
 import { DiJava } from 'react-icons/di';
 import { MdPhone, MdMail } from 'react-icons/md';
 import { FaLinkedin } from 'react-icons/fa';
 import { HiArrowTurnDownLeft } from 'react-icons/hi2';
-import { useState } from "react";
-import BestWorksCard from "../components/BestWorksCard";
-import ServicesCard from "@/components/ServicesCard";
 
 export default function Home() {
   const [hoveredCard, setHoveredCard] = useState<number | null>(null);
