@@ -1,0 +1,1 @@
+export type HoveredCard = number | null;
