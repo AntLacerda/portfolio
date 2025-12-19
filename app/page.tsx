@@ -35,7 +35,7 @@ export default function Home() {
       </div>
       
       <main className="relative w-full h-screen overflow-hidden">
-        <section id="" className="relative w-full h-full">
+        <section id="home" className="relative w-full h-full">
           {/* Background Image */}
           <Image
             src="/images/backgound.png"
@@ -46,20 +46,21 @@ export default function Home() {
             quality={90}
           />
         
-          <div className="absolute inset-0 bg-black/30 z-10" />
+          <div className="absolute inset-0 bg-black/30 z-10" aria-hidden="true" />
 
           <div className="relative z-10 w-full h-full flex flex-col items-center justify-center gap-8 px-4">
-            <div className="flex flex-col justify-center items-center text-center">
-              <p className="font-unifraktur text-5xl text-[#FFF6D9] leading-[0.8]">
+            <header className="flex flex-col justify-center items-center text-center">
+              <h1 className="sr-only">Antonio Lacerda - Creative Full Stack Developer</h1>
+              <p className="font-unifraktur text-5xl text-[#FFF6D9] leading-[0.8]" aria-hidden="true">
                 creative
               </p>
-              <p className="font-sofia text-9xl font-extrabold  text-[#FFF6D9] leading-[0.8] ">
+              <p className="font-sofia text-9xl font-extrabold text-[#FFF6D9] leading-[0.8]" aria-hidden="true">
                 FULL STACK
               </p>
-              <p className="font-sofia text-9xl font-extrabold  text-[#FFF6D9] leading-[0.8]">
+              <p className="font-sofia text-9xl font-extrabold text-[#FFF6D9] leading-[0.8]" aria-hidden="true">
                 DEVELOPER
               </p>
-            </div>
+            </header>
           </div>
 
           <div className="absolute bottom-4 right-2 z-20">
