@@ -19,8 +19,14 @@ import { MdPhone, MdMail } from 'react-icons/md';
 import { FaLinkedin } from 'react-icons/fa';
 import { HiArrowTurnDownLeft } from 'react-icons/hi2';
 
+// Types
+import { HoveredCard } from "../types";
+
 export default function Home() {
-  const [hoveredCard, setHoveredCard] = useState<number | null>(null);
+  const [hoveredCard, setHoveredCard] = useState<HoveredCard>(null);
+
+  const handleCardHover = (id: number) => setHoveredCard(id);
+  const handleCardLeave = () => setHoveredCard(null);
 
   return (
     <div className="min-h-screen">
@@ -251,8 +257,8 @@ export default function Home() {
             description="Desenvolvemos sistemas web completos e personalizados para atender às necessidades da sua empresa. Nossa equipe une tecnologia, design e estratégia para criar aplicativos eficientes, escaláveis e fáceis de usar. Desde o planejamento até a entrega, cuidamos de cada detalhe para que sua solução seja moderna, segura e preparada para crescer junto com você." 
             image="/images/devweb.png"
             hoveredCard={hoveredCard}
-            onMouseEnter={setHoveredCard}
-            onMouseLeave={() => setHoveredCard(null)}  
+            onMouseEnter={handleCardHover}
+            onMouseLeave={handleCardLeave}  
           />
           <ServicesCard 
             id={2} 
@@ -262,8 +268,8 @@ export default function Home() {
             description="Transmita confiança desde o primeiro clique. Criamos sites modernos, rápidos e totalmente responsivos, pensados para destacar sua marca e transformar visitantes em clientes. Do visual à experiência do usuário, cada detalhe é planejado para elevar sua presença digital e gerar resultados reais." 
             image="/images/sites.png"
             hoveredCard={hoveredCard}
-            onMouseEnter={setHoveredCard}
-            onMouseLeave={() => setHoveredCard(null)}
+            onMouseEnter={handleCardHover}
+            onMouseLeave={handleCardLeave}
           />
           <ServicesCard 
             id={3} 
@@ -273,8 +279,8 @@ export default function Home() {
             description="Conecte-se com seu público de forma simples e prática. Desenvolvemos aplicativos mobile intuitivos, seguros e eficientes para impulsionar seu negócio e aproximar você dos seus clientes. Funcionalidade, desempenho e experiência fluida para acompanhar o ritmo do mercado atual." 
             image="/images/desmobi.png"
             hoveredCard={hoveredCard}
-            onMouseEnter={setHoveredCard}
-            onMouseLeave={() => setHoveredCard(null)}  
+            onMouseEnter={handleCardHover}
+            onMouseLeave={handleCardLeave}  
           />
           <ServicesCard 
             id={4} 
@@ -284,8 +290,8 @@ export default function Home() {
             description="Mostre ao mundo a força da sua identidade visual. Criamos artes profissionais e memoráveis, pensadas para fortalecer sua marca e transmitir sua mensagem com clareza e estilo. De logotipos a materiais promocionais, produzimos designs que impressionam e geram conexão imediata." 
             image="/images/desgraphic.png"
             hoveredCard={hoveredCard}
-            onMouseEnter={setHoveredCard}
-            onMouseLeave={() => setHoveredCard(null)}  
+            onMouseEnter={handleCardHover}
+            onMouseLeave={handleCardLeave}  
           />
         </div>
       </section>
